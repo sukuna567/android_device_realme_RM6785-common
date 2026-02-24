@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2021-2024 The LineageOS Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <!-- Enable icon management -->
+    <bool name="config_quick_settings_icon_management">true</bool>
+    
+    <!-- Custom icon order storage -->
+    <string name="config_quick_settings_user_order">wifi,bluetooth,data,flashlight,airplane,battery</string>
+    
+    <!-- Grid layout configuration -->
+    <integer name="config_quick_settings_grid_columns">3</integer>
+    <integer name="config_quick_settings_grid_rows">3</integer>
+    
+    <!-- Icon management settings -->
+    <bool name="config_quick_settings_drag_and_drop">true</bool>
+    <bool name="config_quick_settings_swipe_to_remove">true</bool>
+    <bool name="config_quick_settings_reset_to_default">true</bool>
+    
+    <!-- Animation settings -->
+    <integer name="config_quick_settings_drag_animation_duration">150</integer>
+    <integer name="config_quick_settings_swipe_animation_duration">200</integer>
+    
+    <!-- Icon appearance -->
+    <integer name="config_quick_settings_icon_size">32</integer>
+    <integer name="config_quick_settings_icon_padding">8</integer>
+    <integer name="config_quick_settings_grid_spacing">16</integer>
+</resources>

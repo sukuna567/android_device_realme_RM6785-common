@@ -1,12 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2019 The Android Open Source Project
-     SPDX-License-Identifier: Apache-2.0
+<!--
+     Copyright (C) 2021-2024 The LineageOS Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
 -->
-<!-- Pixel specific wifi overlays -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.settings.RM6785">
-    <overlay
-      android:targetPackage="com.android.settings"
-      android:isStatic="true"
-      android:priority="0"/>
+    package="com.android.settings.overlay"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <application>
+        
+        <!-- Quick Settings Icon Management Activity -->
+        <activity
+            android:name=".QuickSettingsIconManagerActivity"
+            android:label="@string/quick_settings_icon_management"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+            android:exported="false">
+            
+            <!-- Intent filter for accessing icon management -->
+            <intent-filter>
+                <action android:name="com.android.settings.action.QUICK_SETTINGS_ICON_MANAGEMENT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+        </activity>
+        
+        <!-- Service for managing quick settings configuration -->
+        <service
+            android:name=".QuickSettingsConfigService"
+            android:exported="false" />
+            
+    </application>
+    
 </manifest>

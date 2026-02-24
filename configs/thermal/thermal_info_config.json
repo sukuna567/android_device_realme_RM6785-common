@@ -7,10 +7,10 @@
         "NAN",
         "NAN",
         "NAN",
-        50.0,
+        60.0,
         "NAN",
         "NAN",
-        90.0
+        95.0
       ],
       "VrThreshold": "NAN",
       "Multiplier": 0.001
@@ -85,10 +85,10 @@
         "NAN",
         "NAN",
         "NAN",
-        50.0,
+        60.0,
         "NAN",
         "NAN",
-        90.0
+        95.0
       ],
       "VrThreshold": "NAN",
       "Multiplier": 0.001

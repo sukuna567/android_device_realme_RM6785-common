@@ -1,0 +1,102 @@
+# Android Device Realme RM6785 Common - Recent Changes Explanation
+
+## Overview
+This document explains recent changes made to the Android device configuration for Realme RM6785 devices.
+
+## Recent Commits (Last 5)
+
+### 1. Commit: 213e98a - "n pannel"
+**Date:** Tue Feb 24 22:26:59 2026 +0000
+**Author:** sukuna567 <bhudev12364@gmail.com>
+
+**Changes:**
+- Modified SettingsOverlayRM6785 overlay files
+- Added new drawable icons for quick settings panel
+- Updated Android build configuration and manifest
+
+**Files Modified:**
+- `rro_overlays/SettingsOverlayRM6785/Android.bp`
+- `rro_overlays/SettingsOverlayRM6785/AndroidManifest.xml`
+- `rro_overlays/SettingsOverlayRM6785/res/drawable/ic_airplane.xml`
+- `rro_overlays/SettingsOverlayRM6785/res/drawable/ic_battery.xml`
+- `rro_overlays/SettingsOverlayRM6785/res/drawable/ic_bluetooth.xml`
+- `rro_overlays/SettingsOverlayRM6785/res/drawable/ic_cast.xml`
+- `rro_overlays/SettingsOverlayRM6785/res/drawable/ic_data.xml`
+- And several other drawable icon files
+
+**Purpose:** Added new quick settings panel icons and updated the overlay configuration.
+
+### 2. Commit: 10bdd67 - "T_info"
+**Date:** Tue Feb 24 22:26:30 2026 +0000
+**Author:** sukuna567 <bhudev12364@gmail.com>
+
+**Changes:**
+- Modified thermal configuration file
+
+**Files Modified:**
+- `configs/thermal/thermal_info_config.json`
+
+**Purpose:** Updated thermal management configuration.
+
+### 3. Commit: 222cef8 - "RM6785: Set vendor init lib via soong config"
+**Date:** Thu Feb 13 15:53:03 2025 +0000
+**Author:** Aditya Patil <adityapatil1903@gmail.com>
+
+**Changes:**
+- Modified BoardConfigCommon.mk to use soong config for vendor init library
+
+**Files Modified:**
+- `BoardConfigCommon.mk`
+
+**Purpose:** Improved build system configuration by using soong config for vendor init library management.
+
+### 4. Commit: 61839dd - "RM6785-common: Enable UFFD GC"
+**Date:** Thu Feb 13 15:48:53 2025 +0000
+**Author:** Aditya Patil <adityapatil1903@gmail.com>
+
+**Changes:**
+- Enabled User Fault File Descriptor (UFFD) Garbage Collection
+
+**Purpose:** Improved memory management and performance.
+
+### 5. Commit: ef4db3e - "RM6785-common: Bring back LMKD"
+**Date:** Thu Feb 13 15:48:33 2025 +0000
+**Author:** Aditya Patil <adityapatil1903@gmail.com>
+
+**Changes:**
+- Re-enabled Low Memory Killer Daemon (LMKD)
+
+**Purpose:** Restored memory management functionality for better system performance.
+
+## Key Configuration Changes
+
+### BoardConfigCommon.mk Changes
+- Removed hardcoded vendor init library reference
+- Now uses soong config for better build system integration
+
+### Thermal Management
+- Updated thermal configuration for better temperature management
+- Improved thermal throttling behavior
+
+### Quick Settings Panel
+- Added new icon set for quick settings
+- Enhanced user interface elements
+- Improved overlay configuration
+
+## Impact
+These changes improve:
+1. **Build System**: Better integration with Android's soong build system
+2. **Memory Management**: Enhanced garbage collection and low memory handling
+3. **Thermal Management**: Improved temperature control and throttling
+4. **User Interface**: Enhanced quick settings panel with new icons
+
+## Technical Notes
+- The changes maintain compatibility with existing device configurations
+- Build system improvements follow Android Open Source Project (AOSP) best practices
+- Thermal and memory management changes are optimized for MT6785 chipset
+- UI improvements maintain consistency with Android design guidelines
+
+## Branch Information
+- Current branch: `new`
+- Base branch: `lineage-22.2`
+- Last sync with upstream: Recent commits show active development
